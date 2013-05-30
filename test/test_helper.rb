@@ -23,7 +23,7 @@ DatabaseCleaner.strategy = :truncation
 class ActionDispatch::IntegrationTest
   include Rails.application.routes.url_helpers
   include Capybara::DSL
-  include LoginHelper
+
 
   # Stop ActiveRecord from wrapping tests in transactions
   self.use_transactional_fixtures = false
