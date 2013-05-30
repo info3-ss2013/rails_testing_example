@@ -32,6 +32,14 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :test do
+  gem 'rake' # for travis, see http://about.travis-ci.org/docs/user/languages/ruby/
+  gem 'minitest-spec-rails'
+  gem 'capybara'
+  gem 'capybara_minitest_spec'
+  gem 'database_cleaner'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
